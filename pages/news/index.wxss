@@ -1,0 +1,7 @@
+/* pages/news/index.wxss */
+video{
+  width: 100%;
+}
+image{
+  width: 100%;
+}

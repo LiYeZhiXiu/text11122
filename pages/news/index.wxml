@@ -1,0 +1,31 @@
+ <view class="page">
+   <view class="cu-card dynamic no-card margin-top-sm" wx:for="{{list}}">
+    <view class="cu-item shadow">
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url({{item.profile_image}});"></view>
+        <view class="content flex-sub">
+          <view>{{item.name}}</view>
+          <view class="text-gray text-sm flex justify-between">
+           {{item.create_time}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="text-content">
+     {{item.text}}
+    </view>
+    <view class="grid flex-sub padding-lr">
+      <image mode="widthFix" src="{{item.image0}}" wx:if="{{item.type==10}}" ></image>
+      <video src="{{item.video_uri}}" id="{{item.id}}" controls wx:if="{{item.type==41}}" ></video>
+      <audio src="{{item.voice_uri}}" controls wx:if="{{item.type==31}}" poster="{{item.image3}}" ></audio>
+    </view>
+    <view class="text-gray text-sm text-right padding">
+      <text class="icon-attentionfill margin-lr-xs"></text> 10
+      <text class="icon-appreciatefill margin-lr-xs"></text> 20
+      <text class="icon-messagefill margin-lr-xs"></text> 30
+    </view>
+     </view> 
+     </view>
+   <view class="cu-load bg-grey {{!isMore?'loading':'over'}}" wx:if="{{isLoad}}"></view>
+ </view>

@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="page">
+  <!-- 地图 -->
+  <map style='width:100%;height:100vh' latitude='{{latitude}}'  longitude='{{longitude}}' scale="17"  markers="{{ markers}}"show-location bindmarkertap="direction" polyline="{{polyline}}"></map>
+</view>

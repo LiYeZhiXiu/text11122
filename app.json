@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/index",
+    "pages/setting/index",
+    "pages/games/index",
+    "pages/gamesList/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "color":"#666",
+    "selectedColor":"#f00",
+    "list":[
+     {
+        "pagePath":"pages/index/index" ,
+        "text":"找厕所",
+        "iconPath":"images/c.png",
+        "selectedIconPath":"images/c1.png"
+     },
+     {
+      "pagePath": "pages/news/index",
+      "text": "笑话",
+      "iconPath": "images/w.png",
+      "selectedIconPath": "images/w1.png"
+    },
+    {
+      "pagePath": "pages/games/index",
+      "text": "游戏",
+      "iconPath": "images/yx.png",
+      "selectedIconPath": "images/yx1.png"
+    },
+     {
+      "pagePath": "pages/setting/index",
+      "text": "设置",
+      "iconPath": "images/s.png",
+      "selectedIconPath": "images/s1.png"
+    }
+    ]
+  },
+  "permission":{
+    "scope.userLocation":{
+        "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

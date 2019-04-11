@@ -1,0 +1,19 @@
+<!--pages/games/index.wxml-->
+<view class="page">
+  <view class="cu-bar bg-black search">
+      <view class="search-form radius">
+        <text class="icon-search"></text>
+        <input type="text" value="{{searchValue}}" placeholder="请输入游戏名"   confirm-type="search" bindinput="getValue"></input>
+      </view>
+      <view class="action" bindtap='search'>
+        <text class="icon-search"></text>
+        <text>搜索</text>
+      </view>
+  </view>
+  <view class="cu-list grid col-2" wx:if="{{gameList}}">
+    <view class="cu-item" wx:for="{{gameList}}" wx:key bindtap='showList' data-id="{{item.id}}">
+     <view class="cu-avatar xl round" style="background-image:url({{item.image}}); margin:0 auto;"></view>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>
